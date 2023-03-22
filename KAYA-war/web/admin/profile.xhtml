@@ -16,7 +16,7 @@
                                     <div class="card-body box-profile">
                                         <div class="text-center">
                                             <img class="profile-user-img img-fluid img-circle"
-                                                 src="#{resource['/admin/dist/img/profile.png']}"
+                                                 src="#{resource['/admin/dist/img/avatar2.png']}"
                                                  alt="User profile picture"/>
                                         </div>
 
@@ -26,22 +26,21 @@
                                                 <b>Full Name:</b> <a class="float-right">Ngô Thị Cẩm Duyên</a>
                                             </li>
                                             <li class="list-group-item">
-                                                <b>Username</b> <a class="float-right">duyenngo2k2</a>
+                                                <b>Username:</b> <a class="float-right">duyenngo2k2</a>
                                             </li>
                                             <li class="list-group-item">
-                                                <b>Password</b> <a class="float-right">******</a>
+                                                <b>Password:</b> <a class="float-right">******</a>
                                             </li>
                                             <li class="list-group-item">
-                                                <b>Address</b> <a class="float-right">Sóc Trăng</a>
+                                                <b>Address:</b> <a class="float-right">Sóc Trăng</a>
                                             </li>
                                             <li class="list-group-item">
-                                                <b>Email</b> <a class="float-right">duyenngo@gmail.com</a>
+                                                <b>Email:</b> <a class="float-right">duyenngo@gmail.com</a>
                                             </li>
                                             <li class="list-group-item">
-                                                <b>Phone Number</b> <a class="float-right">0387090621</a>
+                                                <b>Phone Number:</b> <a class="float-right">0387090621</a>
                                             </li>
                                         </ul>
-                                        <a href="#" class="btn btn-success btn-block"><b>Change Password</b></a>
                                     </div>
                                 </div>
                             </div>
@@ -50,7 +49,7 @@
                                 <div class="card">
                                     <div class="card-header p-2">
                                         <ul class="nav nav-pills">
-                                            <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">My Orders</a></li>
+                                            <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Change password</a></li>
                                             <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Update profile</a></li>
                                         </ul>
                                     </div>
@@ -59,70 +58,31 @@
                                             <div class="active tab-pane" id="activity">
                                                 <div class="post">
                                                     <div class="card-body">
-                                                        <table id="example1" class="table table-bordered table-striped">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Order No.</th>
-                                                                    <th>Order Date</th>
-                                                                    <th>Product Name</th>
-                                                                    <th>Product Image</th>
-                                                                    <th>Total Price</th>
-                                                                    <th>Status</th>
-                                                                    <th>Action</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>1</td>
-                                                                    <td>16/02/2023</td>
-                                                                    <td>Green Chair</td>
-                                                                    <td>This is image</td>
-                                                                    <td>$1000</td>
-                                                                    <td>
-                                                                        <span class="badge bg-danger">Processing</span>
-                                                                    </td>
-                                                                    <td>
-                                                                        <i class="fa fa-info-circle" title="View details"></i>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>2</td>
-                                                                    <td>16/02/2023</td>
-                                                                    <td>Green Chair</td>
-                                                                    <td>This is image</td>
-                                                                    <td>$1000</td>
-                                                                    <td>
-                                                                        <span class="badge bg-success">Confirmed</span>                                                                    </td>
-                                                                    <td>
-                                                                        <i class="fa fa-info-circle" title="View details"></i>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>2</td>
-                                                                    <td>16/02/2023</td>
-                                                                    <td>Green Chair</td>
-                                                                    <td>This is image</td>
-                                                                    <td>$1000</td>
-                                                                    <td>
-                                                                        <span class="badge bg-warning">Received</span>                                                                    </td>
-                                                                    <td>
-                                                                        <i class="fa fa-info-circle" title="View details"></i>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>2</td>
-                                                                    <td>16/02/2023</td>
-                                                                    <td>Green Chair</td>
-                                                                    <td>This is image</td>
-                                                                    <td>$1000</td>
-                                                                    <td>
-                                                                        <span class="badge bg-primary">Shipping</span>                                                                   </td>
-                                                                    <td>
-                                                                        <i class="fa fa-info-circle" title="View details"></i>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                        <h:form class="form-horizontal">
+                                                            <div class="form-group row">
+                                                                <label for="password" class="col-sm-3 col-form-label">Old password</label>
+                                                                <div class="col-sm-9">
+                                                                    <input type="password" class="form-control" id="inputName"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="newpass" class="col-sm-3 col-form-label">New password</label>
+                                                                <div class="col-sm-9">
+                                                                    <input type="password" class="form-control" id="inputName"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label class="col-sm-3 col-form-label">Confirm password</label>
+                                                                <div class="col-sm-9">
+                                                                    <input type="password" class="form-control" id="inputName"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <div class="offset-sm-3 col-sm-10">
+                                                                    <h:commandButton styleClass="btn btn-success" value="Submit"/>
+                                                                </div>
+                                                            </div>
+                                                        </h:form>
                                                     </div>
                                                 </div>
                                             </div>
